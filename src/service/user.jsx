@@ -34,7 +34,7 @@ export default class User{
     // 登录
     login(userInfo){
         return mm.request({
-            url     : mm.getServerUrl('/manage/user/login.do'),
+            url     : mm.getServerUrl('/user/login.do'),
             method  : 'POST',
             data    : {
                 username : userInfo.username || '',
